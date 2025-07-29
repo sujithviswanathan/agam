@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Machani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <style>
     /* Reset some default styles */
     * {
@@ -14,8 +15,8 @@
 
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
-      background: #f5f8fa;
-      color: #222;
+      background: #181818;
+      color: #eee;
       min-height: 100vh;
     }
 
@@ -79,10 +80,100 @@
       color: #27ae60;
     }
 
+    /* Styles for the new main content */
     main {
-      padding: 3rem max(1rem, 10vw) 2rem max(1rem, 10vw);
-      max-width: 900px;
-      margin: 0 auto;
+      max-width: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      background: #222; /* Retaining existing main background */
+      min-height: 320px; /* Retaining existing main min-height */
+      border-radius: 0; /* Removing border-radius for full-width banner */
+      box-shadow: none; /* Removing box-shadow for full-width banner */
+      display: flex; /* Keeping flex for centering purposes if needed */
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Styles for the main event section */
+    .main-section {
+      position: relative;
+      width: 100%;
+      height: 600px; /* Adjust height as needed */
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #000;
+      margin-bottom: 20px; /* Added spacing below main section */
+    }
+    .main-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the image covers the area */
+      filter: brightness(0.7); /* Slightly dim the image for text readability */
+    }
+    .overlay-content {
+      position: absolute;
+      text-align: center;
+      color: #ffffff;
+      z-index: 1;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    .overlay-content h1 {
+      font-size: 3.5em;
+      margin-bottom: 10px;
+      color: #ff4500; /* A festive red/orange */
+      letter-spacing: 2px;
+    }
+    .overlay-content h2 {
+      font-size: 2em;
+      margin-bottom: 5px;
+      color: #f0f0f0;
+    }
+    .overlay-content p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    /* Styles for the details section */
+    .details-section {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #1a1a1a;
+      border-top: 5px solid #ff4500;
+      margin-bottom: 20px; /* Added spacing below details section */
+    }
+    .details-section h3 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #ff4500;
+    }
+    .details-section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    .qr-code {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #000;
+      display: inline-block;
+      border-radius: 10px;
+    }
+    .qr-code img {
+      width: 150px; /* Adjust size as needed */
+      height: auto;
+    }
+
+    /* Styles for the footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1a1a;
+      font-size: 0.9em;
+      color: #cccccc;
     }
 
     @media (max-width: 600px) {
@@ -101,31 +192,70 @@
         gap: 1rem;
         padding-top: 0.5rem;
       }
-      main {
-        padding: 2rem 1rem 1rem 1rem;
+      /* Adjust main section for smaller screens */
+      .main-section {
+        height: 400px; /* Shorter height on mobile */
+      }
+      .overlay-content h1 {
+        font-size: 2.5em;
+      }
+      .overlay-content h2 {
+        font-size: 1.5em;
+      }
+      .overlay-content p {
+        font-size: 1em;
+      }
+      .details-section {
+        padding: 20px 10px;
+      }
+      .qr-code img {
+        width: 100px;
       }
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo-container">
-      <img src="IMG_4851" alt="Machani Logo" class="logo-img" />
-      <span class="brand-title">Machani</span>
+<header>
+  <div class="logo-container">
+    <img src="IMG_4851.jpg"  class="logo-img" />
+    <span class="brand-title">Machani</span>
+  </div>
+  <nav>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<main class="main-section" style="display: flex; flex-direction: row; align-items: center; justify-content: center; background: #222; min-height: 400px; border-radius: 16px; box-shadow: 0 2px 16px rgba(44,204,113,0.10); padding: 2rem 0;">
+  <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+    <img src="Screenshot head.png" style="width: 320px; height: auto; border-radius: 0; object-fit: cover; box-shadow: none; background: none; display: block; margin: 0 auto;" alt="Event Poster">
+  </div>
+  <div style="flex: 1; color: #fff; padding: 2rem; display: flex; flex-direction: column; justify-content: center; min-width: 280px; max-width: 480px;">
+    <h1 style="font-family: 'Pacifico', cursive; font-size: 2.2rem; color: #ff4500; margin-bottom: 1rem;">AGAM LIVE</h1>
+    <h2 style="font-size: 1.4rem; color: #eee; margin-bottom: 0.7rem;">ARRIVAL OF THE ETHEREAL</h2>
+    <p style="font-size: 1.1rem; margin-bottom: 1.2rem; color: #ccc;">Experience an unforgettable musical journey!</p>
+    <div style="margin-bottom: 1.2rem;">
+      <strong>Date:</strong> August 24th<br>
+      <strong>Venue:</strong> Mirra, Bellevue<br>
+      <strong>Gates Open:</strong> 5:00 pm
     </div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Products</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
-  <main>
-    <h1>Welcome to Machani</h1>
-    <p>
-      We bring innovative solutions and a forward-thinking approach to every challenge. Explore our offerings and discover how Machani can help you achieve your goals.
-    </p>
-    <!-- Add more professional content here as needed -->
-  </main>
+    <a href="#tickets" style="background: #2ecc71; color: #fff; font-size: 1.1rem; padding: 0.7rem 2rem; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; text-align: center; text-decoration: none; display: inline-block; box-shadow: 0 2px 8px rgba(44,204,113,0.08); transition: background 0.2s;">Get Tickets</a>
+  </div>
+</main>
+
+<section class="details-section">
+  <h3>Event Details</h3>
+  <p><strong>Date:</strong> August 24th</p>
+  <p><strong>Venue:</strong> Mirra, Bellevue</p>
+  <p><strong>Gates Open:</strong> 5:00 pm</p>
+  <div class="qr-code">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_phones.svg" alt="QR Code for Tickets">
+    <p>Scan for Tickets / More Information</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2025 dKollective & MACHANI. All rights reserved.</p>
+</footer>
 </body>
 </html>
