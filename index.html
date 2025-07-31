@@ -14,8 +14,8 @@
     }
 
     body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      background: #fff;
+      font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #f7b42c 0%, #fc575e 100%);
       color: #222;
       min-height: 100vh;
     }
@@ -26,7 +26,7 @@
       top: 0;
       width: 100%;
       background: #fff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 8px rgba(44,204,113,0.08);
       display: flex;
       align-items: center;
       padding: 0.5rem 2rem;
@@ -51,12 +51,11 @@
     }
 
     .brand-title {
+      color: #fc575e;
+      font-family: 'Montserrat', cursive;
       font-size: 2rem;
-      font-weight: 800;
-      letter-spacing: 0.08em;
-      color: #2ecc71;
-      text-shadow: 0 2px 10px #e0ffe6;
-      text-transform: uppercase;
+      font-weight: bold;
+      margin-left: 8px;
     }
 
     /* Example navigation for a professional look */
@@ -64,10 +63,11 @@
       margin-left: auto;
       display: flex;
       gap: 1.5rem;
+      font-size: 0.95rem;
     }
 
     nav a {
-      color: #333;
+      color: #fc575e;
       text-decoration: none;
       font-weight: 500;
       padding: 0.5rem 0.8rem;
@@ -87,55 +87,62 @@
       width: 100%;
       padding: 0;
       margin: 0;
-      background: #fff; /* Set background to white */
-      min-height: 320px; /* Retaining existing main min-height */
-      border-radius: 0; /* Removing border-radius for full-width banner */
-      box-shadow: none; /* Removing box-shadow for full-width banner */
-      display: flex; /* Keeping flex for centering purposes if needed */
+      background: linear-gradient(90deg, #f7b42c 0%, #fc575e 100%); /* Festive gradient */
+      min-height: 320px;
+      border-radius: 0;
+      box-shadow: 0 4px 24px rgba(252,87,94,0.12); /* Professional shadow */
+      display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      position: relative;
+      overflow: hidden;
     }
 
     /* Styles for the main event section */
     .main-section {
       position: relative;
       width: 100%;
-      height: 600px; /* Adjust height as needed */
+      height: 600px;
       overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #f7f7fa; /* Changed to a light color */
-      margin-bottom: 20px; /* Added spacing below main section */
+      background: transparent;
+      margin-bottom: 20px;
     }
     .main-section img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* Ensures the image covers the area */
-      filter: brightness(0.7); /* Slightly dim the image for text readability */
+      width: 220px;
+      height: auto;
+      border-radius: 18px;
+      object-fit: cover;
+      box-shadow: 0 4px 24px #fc575e33;
+      background: none;
+      display: block;
+      margin: 0 auto;
+      transition: box-shadow 0.3s;
+      border: 4px solid #fff;
     }
-    .overlay-content {
-      position: absolute;
+    .main-section a {
+      background: linear-gradient(90deg,#fc575e 0%,#f7b42c 100%);
+      color: #fff;
+      font-size: 1.2rem;
+      padding: 0.8rem 2.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 700;
       text-align: center;
-      color: #ffffff;
-      z-index: 1;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 2px 8px #fc575e22;
+      margin-top: 1.2rem;
+      transition: background 0.2s;
+      letter-spacing: 1px;
     }
-    .overlay-content h1 {
-      font-size: 3.5em;
-      margin-bottom: 10px;
-      color: #ff4500; /* A festive red/orange */
-      letter-spacing: 2px;
-    }
-    .overlay-content h2 {
-      font-size: 2em;
-      margin-bottom: 5px;
-      color: #f0f0f0;
-    }
-    .overlay-content p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
+    .main-section a:hover {
+      background: linear-gradient(90deg,#f7b42c 0%,#fc575e 100%);
+      color: #222;
     }
 
     /* Styles for the details section */
@@ -244,7 +251,7 @@
         display: flex !important;
       }
       .mobile-menu a {
-        color: #2ecc71;
+        color: brown;
         font-size: 1rem;
         padding: 0.6rem 0.2rem;
         text-align: left;
@@ -257,17 +264,17 @@
     }
   </style>
 </head>
-<body>
-<header>
-  <div class="logo-container">
-    <img src="Machani%20Logo.png"  class="logo-img" />
-    <span class="brand-title"  style="color: darkred">Machani</span>
+<body style="background: linear-gradient(135deg, #f7b42c 0%, #fc575e 100%); margin:0; font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;">
+<header style="background: #fff; box-shadow: 0 2px 8px rgba(44,204,113,0.08);">
+  <div class="logo-container" style="display:flex;align-items:center;">
+    <img src="Machani%20Logo.png" class="logo-img" style="height:48px;"/>
+    <span class="brand-title" style="color: #fc575e; font-family: 'Montserrat', cursive; font-size: 2rem; font-weight: bold; margin-left:8px;">Machani</span>
   </div>
-  <nav>
-    <a href="https://www.facebook.com/teammachani" target="_blank" rel="noopener noreferrer">About</a>
-    <a href="mailto:teammachani@gmail.com" style="font-weight:600;">Contact Us</a>
+  <nav style="font-size:0.95rem;">
+    <a href="https://www.facebook.com/teammachani" target="_blank" rel="noopener noreferrer" style="color:#fc575e; margin-right:16px;">About</a>
+    <a href="mailto:teammachani@gmail.com" style="color:#f7b42c; font-weight:600;">Contact Us</a>
   </nav>
-  <div class="hamburger" id="hamburger-menu">
+  <div class="hamburger" id="hamburger-menu" style="display:none;">
     <span></span>
     <span></span>
     <span></span>
@@ -277,38 +284,33 @@
   <a href="https://www.facebook.com/teammachani" target="_blank" rel="noopener noreferrer">About</a>
   <a href="mailto:teammachani@gmail.com" style="font-weight:600;">Contact Us</a>
 </div>
-<div style="max-width: 1100px; margin: 2rem auto; background: #232323; border-radius: 12px; box-shadow: 0 2px 16px rgba(44,204,113,0.10);">
-  <div style="border-bottom: 1px solid darkslategrey; padding: 1rem 2rem; background: #222; border-top-left-radius: 12px; border-top-right-radius: 12px;">
-    <span style="font-family: 'Segoe UI', Arial, sans-serif; font-size: 1.2rem; font-weight: 600; color: whitesmoke; letter-spacing: 1px;">Upcoming Event</span>
+<div style="max-width: 1100px; margin: 2rem auto; background: rgba(255,255,255,0.95); border-radius: 18px; box-shadow: 0 4px 24px rgba(252,87,94,0.12); overflow:hidden;">
+  <div style="border-bottom: 2px solid #fc575e; padding: 1.5rem 2rem; background: linear-gradient(90deg,#fc575e 0%,#f7b42c 100%); border-top-left-radius: 18px; border-top-right-radius: 18px;">
+    <span style="font-family: 'Montserrat', cursive; font-size: 2rem; font-weight: 700; color: #fff; letter-spacing: 2px;">🎉 Upcoming Event 🎶</span>
   </div>
-  <main class="main-section" style="display: flex; flex-direction: row; align-items: center; justify-content: center; background: #222; min-height: 400px; border-radius: 0; box-shadow: none; padding: 2rem 0;">
+  <main class="main-section" style="display: flex; flex-direction: row; align-items: center; justify-content: center; background: transparent; min-height: 400px; border-radius: 0; box-shadow: none; padding: 2rem 0;">
     <div style="flex: 1; display: flex; align-items: center; justify-content: center; flex-direction: column;">
-
-      <img src="Screenshot head.png" style="width: 220px; height: auto; border-radius: 0; object-fit: cover; box-shadow: none; background: none; display: block; margin: 0 auto;" alt="Event Poster">
-      <a href="https://www.dkollective.com/events/agam-arrival-of-the-ethereal-world-tour-live-at-mirra-bellevue" style="background: #2ecc71; color: #fff; font-size: 1.1rem; padding: 0.7rem 2rem; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; text-align: center; text-decoration: none; display: inline-block; box-shadow: 0 2px 8px rgba(44,204,113,0.08); transition: background 0.2s; margin-top: 1rem;">Get Tickets</a>
+      <img src="Screenshot head.png" style="width: 180px; height: auto; border-radius: 16px; object-fit: cover; box-shadow: 0 4px 24px #fc575e33; background: none; display: block; margin: 0 auto; transition: box-shadow 0.3s;" alt="Event Poster">
+      <a href="https://www.dkollective.com/events/agam-arrival-of-the-ethereal-world-tour-live-at-mirra-bellevue"
+         style="background: linear-gradient(90deg,#fc575e 0%,#f7b42c 100%); color: #fff; font-size: 1.2rem; padding: 0.8rem 2.2rem; border: none; border-radius: 8px; cursor: pointer; font-weight: 700; text-align: center; text-decoration: none; display: inline-block; box-shadow: 0 2px 8px #fc575e22; margin-top: 1.2rem; transition: background 0.2s;">
+         🎟️ Get Tickets
+      </a>
     </div>
-    <div style="flex: 1; color: #fff; padding: 2rem; display: flex; flex-direction: column; justify-content: center; min-width: 280px; max-width: 480px;">
-
-      <p style="font-size: 1.1rem; margin-bottom: 1.2rem; color: #bbb;">Experience India's most groundbreaking Carnatic Progressive Rock band, Agam, at Bellevue's stunning immersive entertainment venue Mirra this summer. This rare convergence brings together a musical act that seamlessly fuses 2,000-year-old South Indian classical traditions with thunderous progressive rock, performing in a space featuring floor-to-ceiling 8K LED screens that transform environments throughout the evening.</p>
-      <div style="margin-bottom: 1.2rem;">
-        <strong>Date:</strong> August 24th, 5:00 PM - 8:00 PM PDT<br>
-        <strong>Venue:</strong> Mirra, Bellevue<br>
-        <span style="color:#aaa; font-size:0.98rem;">500 Bellevue Way NE Suite 310, 3rd floor, Bellevue, WA 98004</span><br>
-      </div>
-    </div>
-    <div style="margin-top: 1.5rem; color: #eee; text-align: left; max-width: 480px;">
-      <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem; color:darkgoldenrod;">About AGAM</h3>
-      <p style="font-size: 1.05rem; line-height: 1.6; color: #ccc;">
-        Agam, whose name means <em>"inner soul"</em> in Tamil, has captivated audiences worldwide with a genre-defying sound that weaves intricate Carnatic ragas into complex progressive rock arrangements. With celebrated tracks like <strong>“Malhar Jam”</strong> featured on MTV Coke Studio and an impressive history of sold-out tours across the United States, Agam stands at the forefront of India's contribution to the global fusion music movement.
+    <div style="flex: 1; color: #222; padding: 2rem; display: flex; flex-direction: column; justify-content: center; min-width: 280px; max-width: 480px;">
+      <p style="font-size: 1.15rem; margin-bottom: 1.2rem; color: #fc575e; font-weight: 500;">
+        Experience India's most groundbreaking Carnatic Progressive Rock band, <span style="font-weight:700;">Agam</span>, at Bellevue's stunning immersive entertainment venue Mirra this summer.<br>
+        <span style="color:#f7b42c;">A rare convergence of 2,000-year-old South Indian classical traditions and thunderous progressive rock, performed in a space with floor-to-ceiling 8K LED screens!</span>
       </p>
+      <div style="margin-bottom: 1.2rem; font-size:1.08rem;">
+        <strong style="color:#fc575e;">Date:</strong> <span style="color:#222;">August 24th, 5:00 PM - 8:00 PM PDT</span><br>
+        <strong style="color:#fc575e;">Venue:</strong> <span style="color:#222;">Mirra, Bellevue</span><br>
+        <span style="color:#f7b42c; font-size:1rem;">500 Bellevue Way NE Suite 310, 3rd floor, Bellevue, WA 98004</span><br>
+      </div>
     </div>
   </main>
 </div>
-
-
-<footer class="footer">
-
-  <p>&copy; MACHANI. All rights reserved.</p>
+<footer style="text-align:center; color:#fc575e; font-size:0.95rem; margin-top:2rem;">
+  <span>© 2025 Machani & dKollective. All rights reserved.</span>
 </footer>
 <script>
   const hamburger = document.getElementById('hamburger-menu');
